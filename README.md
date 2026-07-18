@@ -1,4 +1,4 @@
-# India Census 2011 Interactive Choropleth Map (Folium)
+# India Census 2011 Map (Folium)
 
 A Python workflow that joins India's state boundaries with Census 2011 data and renders an interactive, self-contained HTML choropleth map using [`folium`](https://python-visualization.github.io/folium/latest/) — no web server or GIS software required to view the output.
 
@@ -11,7 +11,6 @@ This notebook demonstrates an end-to-end pipeline for turning tabular census dat
 3. **Render a baseline interactive map** of state boundaries with hover tooltips and click popups
 4. **Pull Census 2011 data** two ways: (a) directly via the [data.gov.in API](https://www.data.gov.in), or (b) from a pre-cleaned Excel extract sourced from the [Wikipedia 2011 Census summary](https://en.wikipedia.org/wiki/2011_census_of_India)
 5. **Merge census data onto the boundary GeoDataFrame** by state name, with explicit unmatched-name diagnostics (state-name strings rarely match cleanly across independently-sourced datasets)
-6. **Render the final interactive choropleth/popup map** and export it as a standalone HTML file
 
 ## Data Sources
 
@@ -46,7 +45,7 @@ This notebook demonstrates an end-to-end pipeline for turning tabular census dat
 ## Outputs
 
 - `india_states_map.html` — baseline interactive state boundary map
-- `india_states_map_census.html` — final choropleth/popup map with Census 2011 attributes joined in
+- `india_states_map_census.html` — final  map with Census 2011 attributes joined
 
 ## Getting Started
 
